@@ -6,6 +6,8 @@ use Illuminate\Database\Seeder;
 
 use Spatie\Permission\Models\Permission;
 
+use App\Models\Platform;
+
 class PermissionSeeder extends Seeder
 {
     /**
@@ -57,6 +59,14 @@ class PermissionSeeder extends Seeder
 
         Permission::create([
             'name' => 'Editar usuarios' 
+        ]);
+
+        Platform::create([
+            'name' => 'Youtube'
+        ]);
+
+        Platform::create([
+            'name' => 'Vimeo'
         ]);
     }
 }
