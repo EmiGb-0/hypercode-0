@@ -61,6 +61,11 @@ class PermissionSeeder extends Seeder
             'name' => 'Editar usuarios' 
         ]);
 
+        Permission::create([
+            'name' => 'Opciones de curso' 
+        ]);
+
+
         Platform::create([
             'name' => 'Youtube'
         ]);
