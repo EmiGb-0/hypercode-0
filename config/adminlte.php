@@ -271,21 +271,25 @@ return [
             'text' => 'Categorias',
             'route'  => 'admin.categories.index',
             'icon' => 'fas fa-fw fa-cogs',
+            'can' => 'Opciones de curso'
         ],
         [
             'text' => 'Niveles',
             'route'  => 'admin.levels.index',
             'icon' => 'fas fa-fw fa-chart-line',
+            'can' => 'Opciones de curso'
         ],
         [
             'text' => 'Precios',
             'route'  => 'admin.prices.index',
             'icon' => 'fab fa-fw fa-cc-visa',
+            'can' => 'Opciones de curso'
         ],
         [
             'text' => 'Pendientes de Aprobacion',
             'route'  => 'admin.courses.index',
             'icon' => 'fas fa-fw fa-user',
+            'can' => 'Opciones de curso'
         ],
         
     ],
