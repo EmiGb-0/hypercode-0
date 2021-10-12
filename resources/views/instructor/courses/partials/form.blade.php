@@ -66,7 +66,7 @@
         @endisset
     </figure>
     <div>
-        <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquid inventore ipsum dignissimos distinctio praesentium delectus unde, cum veritatis ea officia nam iste amet quisquam. Placeat sint sunt maxime id!</p>
+        <p class="mb-2">Esta sección se encuentra en mantenimiento, se recomienda usar la imagen de por defecto</p>
         {!! Form::file('file', ['class' => 'form-input w-full' . ($errors->has('file') ? ' border-red-600' : ''), 'id' => 'file', 'accept' => 'image/*']) !!}
         
         @error('file')
