@@ -10,7 +10,18 @@
             'name' => 'Cursos',
             'route' => route('courses.index'),
             'active' => request()->routeIs('courses.*')
+        ],
+        [
+            'name' => 'Socios',
+            'route' => route('partner.index'),
+            'active' => request()->routeIs('partner.*')
+        ],
+        [
+            'name' => 'Acerca de',
+            'route' => route('about.index'),
+            'active' => request()->routeIs('about.*')
         ]
+
     ]
 @endphp
 
@@ -217,7 +228,7 @@
                         Perfil
                     </x-jet-responsive-nav-link>
 
-                    @can('Leer curso')
+                    @can('Leer cursos')
                         <x-jet-responsive-nav-link href="{{ route('instructor.courses.index') }}" :active="request()->routeIs('instructor.courses.index')">
                             Instructor
                         </x-jet-responsive-nav-link>

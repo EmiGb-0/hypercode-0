@@ -30,7 +30,7 @@
                     <h1 class="text-center text-xl text-gray-700">Cursos y Talleres</h1>
                 </header>
 
-                <p class="text-sm text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia illum amet corporis? </p>
+                <p class="text-sm text-gray-500 text-center">Puedes encontrar cursos gratuitos</p>
 
             </article>
 
@@ -43,7 +43,7 @@
                     <h1 class="text-center text-xl text-gray-700">Podcasts</h1>
                 </header>
 
-                <p class="text-sm text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia illum amet corporis? </p>
+                <p class="text-sm text-gray-500 text-center">[Proximamente]</p>
             </article>
 
             <article>
@@ -55,7 +55,7 @@
                     <h1 class="text-center text-xl text-gray-700">Blog</h1>
                 </header>
 
-                <p class="text-sm text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia illum amet corporis? </p>
+                <p class="text-sm text-gray-500 text-center">[Proximamente]</p>
             </article>
 
             <article>
@@ -64,10 +64,10 @@
                 </figure>
 
                 <header class="mt-2">
-                    <h1 class="text-center text-xl text-gray-700">Desarrollo personal</h1>
+                    <h1 class="text-center text-xl text-gray-700">Escuelas</h1>
                 </header>
 
-                <p class="text-sm text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia illum amet corporis? </p>
+                <p class="text-sm text-gray-500 text-center">[Proximamente]</p>
             </article>
         </div>
 
