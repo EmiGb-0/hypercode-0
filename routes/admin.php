@@ -16,19 +16,19 @@ Route::resource('roles', RoleController::class)->names('roles');
 
 Route::resource('users', UserController::class)->only('index', 'edit', 'update')->names('users');
 
-Route::resource('categories', CategoryController::class)->names('categories');
+Route::resource('categories', CategoryController::class)->middleware('can:Opciones de curso')->names('categories');
 
-Route::resource('levels', LevelController::class)->names('levels');
+Route::resource('levels', LevelController::class)->middleware('can:Opciones de curso')->names('levels');
 
-Route::resource('prices', PriceController::class)->names('prices');
+Route::resource('prices', PriceController::class)->middleware('can:Opciones de curso')->names('prices');
 
-Route::get('courses', [CourseController::class, 'index'])->name('courses.index');
+Route::get('courses', [CourseController::class, 'index'])->middleware('can:Opciones de curso')->name('courses.index');
 
-Route::get('courses/{course}', [CourseController::class, 'show'])->name('courses.show');
+Route::get('courses/{course}', [CourseController::class, 'show'])->middleware('can:Opciones de curso')->name('courses.show');
 
-Route::post('courses/{course}/approved', [CourseController::class, 'approved'])->name('courses.approved');
+Route::post('courses/{course}/approved', [CourseController::class, 'approved'])->middleware('can:Opciones de curso')->name('courses.approved');
 
-Route::get('courses/{course}/observation', [CourseController::class, 'observation'])->name('courses.observation');
+Route::get('courses/{course}/observation', [CourseController::class, 'observation'])->middleware('can:Opciones de curso')->name('courses.observation');
 
-Route::post('courses/{course}/reject', [CourseController::class, 'reject'])->name('courses.reject');
+Route::post('courses/{course}/reject', [CourseController::class, 'reject'])->middleware('can:Opciones de curso')->name('courses.reject');
 
