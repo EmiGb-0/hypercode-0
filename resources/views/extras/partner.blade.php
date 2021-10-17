@@ -15,7 +15,7 @@
                     </article>
                     <p class="mb-4">Casa de entretenimiento, peliculas, juegos y más</p>
 
-                    <a target="_blank" href="https://discord.gg/hfr2kfbnfm" class="btn btn-primary">Más Información</a>
+                    <a href="#" class="btn btn-primary">Más Información</a>
                 </div>
             </div>
 
