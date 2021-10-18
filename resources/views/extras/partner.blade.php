@@ -5,19 +5,6 @@
         <p>Empresas, comunidades, organizaciones que confían en HyperCode</p>
 
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="text-xl uppercase">Surf Entertainment</h1>
-                    <article>
-                        <figure>
-                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/default.jpg')}}" alt="Imagen Default">
-                        </figure>
-                    </article>
-                    <p class="mb-4">Casa de entretenimiento, peliculas, juegos y más</p>
-
-                    <a href="#" class="btn btn-primary">Más Información</a>
-                </div>
-            </div>
 
             <div class="card">
                 <div class="card-body">
@@ -36,9 +23,32 @@
 
             <div class="card">
                 <div class="card-body">
-                    
+                    <h1 class="text-xl uppercase">Espacio Libre</h1>
+                    <article>
+                        <figure>
+                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/default.jpg')}}" alt="Imagen Default">
+                        </figure>
+                    </article>
+                    <p class="mb-4">Este espacio esta libre para su uso</p>
+
+                    <a href="#" class="btn btn-primary">En Espera</a>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="text-xl uppercase">Espacio Libre</h1>
+                    <article>
+                        <figure>
+                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/default.jpg')}}" alt="Imagen Default">
+                        </figure>
+                    </article>
+                    <p class="mb-4">Este espacio esta libre para su uso</p>
+
+                    <a href="#" class="btn btn-primary">En Espera</a>
+                </div>
+            </div>
+
         </section>
 
         <h2 class="uppercase text-2xl mt-4">Discord</h2>
@@ -61,13 +71,29 @@
 
             <div class="card">
                 <div class="card-body">
-                    
+                    <h1 class="text-xl uppercase">Espacio Libre</h1>
+                    <article>
+                        <figure>
+                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/default.jpg')}}" alt="Imagen Default">
+                        </figure>
+                    </article>
+                    <p class="mb-4">Este espacio esta libre para su uso</p>
+
+                    <a href="#" class="btn btn-primary">En Espera</a>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
-                    
+                    <h1 class="text-xl uppercase">Espacio Libre</h1>
+                    <article>
+                        <figure>
+                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/default.jpg')}}" alt="Imagen Default">
+                        </figure>
+                    </article>
+                    <p class="mb-4">Este espacio esta libre para su uso</p>
+
+                    <a href="#" class="btn btn-primary">En Espera</a>
                 </div>
             </div>
         </section>
