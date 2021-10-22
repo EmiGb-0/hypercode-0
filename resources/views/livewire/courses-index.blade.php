@@ -11,9 +11,9 @@
             <!-- Dropdown categorias-->
             <div class="relative mr-4" x-data="{ open: false }">
                 <button class="px-4 text-gray-700 bg-white shadow block h-12 rounded-lg overflow-hidden focus:outline-none" x-on:click="open = true">
-                    <i class="fas fa-tags text-sm mr-2"></i>
+                    <i class="fas fa-layer-group text-sm mr-2"></i>
                     Categoria
-                    <i class="fas fa-angle-down text-sm ml-2"></i> 
+                    <i class="fas fa-angle-down text-sm ml-2"></i>
                 </button>
                 <!-- Dropdown Body -->
                 <div class="absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl" x-show="open" x-on:click.away="open = false">   
@@ -29,7 +29,7 @@
             <!-- // Dropdown -->
   
             <!-- Dropdown Niveles -->
-            <div class="relative" x-data="{ open: false }">
+            <div class="relative mr-4" x-data="{ open: false }">
                 <button class="px-4 text-gray-700 bg-white shadow block h-12 rounded-lg overflow-hidden focus:outline-none" x-on:click="open = true">
                     <i class="fas fa-tags text-sm mr-2"></i>
                         Niveles
@@ -47,6 +47,11 @@
                 <!-- // Dropdown Body -->
             </div>
             <!-- // Dropdown -->
+
+            <button class="focus:outline-none bg-white shadow h-12 px-4 rounded-lg text-gray-700 mr-4" wire:click="resetFilters">
+                <i class="fas fa-filter text-xs mr-2"></i>
+                Limpiar Filtros
+            </button>
 
         </div>
     </div>
