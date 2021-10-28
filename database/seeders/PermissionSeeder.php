@@ -64,14 +64,5 @@ class PermissionSeeder extends Seeder
         Permission::create([
             'name' => 'Opciones de curso' 
         ]);
-
-
-        Platform::create([
-            'name' => 'Youtube'
-        ]);
-
-        Platform::create([
-            'name' => 'Vimeo'
-        ]);
     }
 }
