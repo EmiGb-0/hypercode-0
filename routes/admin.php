@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\LevelController;
 use App\Http\Controllers\Admin\PriceController;
+use App\Http\Controllers\Admin\PartnerController;
 
 Route::get('', [HomeController::class, 'index'])->middleware('can:Ver dashboard')->name('home');
 
@@ -21,6 +22,8 @@ Route::resource('categories', CategoryController::class)->middleware('can:Opcion
 Route::resource('levels', LevelController::class)->middleware('can:Opciones de curso')->names('levels');
 
 Route::resource('prices', PriceController::class)->middleware('can:Opciones de curso')->names('prices');
+
+Route::resource('partners', PartnerController::class)->names('partners')->middleware('can:Ver dashboard');
 
 Route::get('courses', [CourseController::class, 'index'])->middleware('can:Opciones de curso')->name('courses.index');
 
