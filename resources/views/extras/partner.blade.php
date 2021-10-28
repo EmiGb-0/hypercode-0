@@ -6,97 +6,43 @@
 
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-1 md:grid-cols-3 gap-4 mt-4">
 
+            @foreach ($partners as $partner)
+
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-xl uppercase">{{$partner->title}}</h1>
+                        <article>
+                            <figure>
+                                <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{$partner->image}}" alt="Banner_Partners_HyperCode">
+                            </figure>
+                        </article>
+                        <p class="mb-4">{{$partner->subtitle}}</p>
+
+                        <a target="_blank" href="{{$partner->link}}" class="btn btn-primary">Más Información</a>
+                    
+                    </div>
+                </div>
+
+            @endforeach
+
             <div class="card">
                 <div class="card-body">
-                    <h1 class="text-xl uppercase">Leno</h1>
+                    <h1 class="text-xl uppercase">Espacio libre</h1>
                     <article>
                         <figure>
-                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/leno.png')}}" alt="Leno_Banner">
+                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/default.jpg')}}" alt="Leno_Banner">
                         </figure>
                     </article>
-                    <p class="mb-4">Seguramente conozcas Steam, Epic Games, Battle.net, Origin, Uplay, GOG... Pero ¿Por qué no creamos nuestro propio launcher para videojuegos por medio de la comunidad?</p>
+                    <p class="mb-4">Este espacio esta libre para su uso</p>
 
-                    <a target="_blank" href="https://lenobeta.xyz" class="btn btn-primary">Más Información</a>
+                    <a href="#" class="btn btn-primary">Libre</a>
                 
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="text-xl uppercase">Espacio Libre</h1>
-                    <article>
-                        <figure>
-                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/default.jpg')}}" alt="Imagen Default">
-                        </figure>
-                    </article>
-                    <p class="mb-4">Este espacio esta libre para su uso</p>
-
-                    <a href="#" class="btn btn-primary">En Espera</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="text-xl uppercase">Espacio Libre</h1>
-                    <article>
-                        <figure>
-                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/default.jpg')}}" alt="Imagen Default">
-                        </figure>
-                    </article>
-                    <p class="mb-4">Este espacio esta libre para su uso</p>
-
-                    <a href="#" class="btn btn-primary">En Espera</a>
-                </div>
-            </div>
-
         </section>
 
-        <h2 class="uppercase text-2xl mt-4">Discord</h2>
-        <p>Bots y comunidades que nos apoyan</p>
-
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="text-xl uppercase">Umbrella</h1>
-                    <article>
-                        <figure>
-                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="https://umbrellabot.xyz/images/host/banner.gif" alt="Umbrella_Banner">
-                        </figure>
-                    </article>
-                    <p class="mb-4">Bot de discord multifunciones; Moderación, Seguridad, Diversióm y más</p>
-
-                    <a target="_blank" href="https://umbrellabot.xyz" class="btn btn-primary">Más Información</a>
-                </div>
-            </div> 
-
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="text-xl uppercase">Espacio Libre</h1>
-                    <article>
-                        <figure>
-                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/default.jpg')}}" alt="Imagen Default">
-                        </figure>
-                    </article>
-                    <p class="mb-4">Este espacio esta libre para su uso</p>
-
-                    <a href="#" class="btn btn-primary">En Espera</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="text-xl uppercase">Espacio Libre</h1>
-                    <article>
-                        <figure>
-                            <img class="rounded-xl my-2 h-36 w-full object-cover" src="{{asset('img/partners/default.jpg')}}" alt="Imagen Default">
-                        </figure>
-                    </article>
-                    <p class="mb-4">Este espacio esta libre para su uso</p>
-
-                    <a href="#" class="btn btn-primary">En Espera</a>
-                </div>
-            </div>
-        </section>
+        
 
         <section class="mt-4">
             <h2 class="text-2xl">¿Buscas ser socio de HyperCode?</h2>
