@@ -291,6 +291,14 @@ return [
             'icon' => 'fas fa-fw fa-user',
             'can' => 'Opciones de curso'
         ],
+        ['header' => 'OPCIONES EXTRAS'],
+        [
+            'text' => 'Partners',
+            'route'  => 'admin.partners.index',
+            'icon' => 'fas fa-fw fa-handshake',
+            'can' => 'Opciones de curso',
+            'active'    => ['admin/partners*']
+        ],
         
     ],
 
